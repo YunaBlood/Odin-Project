@@ -55,12 +55,12 @@ Ruby Variables
 >**number = 1** #Integer <br>
 >**CanProgram = false** //booleans
 >## What does the += assignment operator do?
->The assignment perform an operation on the original value and reassign this value in this case it add the value so example : 
->>**number = 5 <br> 
+>The assignment perform an operation on the original value and reassign this value in this case it add the value so example :
+>>**number = 5 <br>
 >>number = number + 5 <br>Same as: number += 5**
 >## What does the -= assignment operator do?
->Same as above but it subtract instead of add example: 
->>**number = 5** <br> 
+>Same as above but it subtract instead of add example:
+>>**number = 5** <br>
 >>**number -= 5 will result in 0 because we subtract 5 - 5**
 >## What does the *= assignment operator do?
 >Same as above but multiply instead of subtract
@@ -69,7 +69,7 @@ Ruby Variables
 >## What are the variable naming conventions?
 >You should always give your variable a meaningful name and not **a** for a string per example:
 >
->### Bad naming conventions 
+>### Bad naming conventions
 >>**a = 1<br>
 >b = "John"<br>
 >c = true<br>**
@@ -82,3 +82,18 @@ Ruby Variables
 >>can_swim = true<br>**
 >
 >**Also you should always name your variable with snake_case if the variable is multiple word that is the ruby way !**
+---
+<h1 align = "center">
+Ruby Input and Output
+</h1>
+
+>### What are the two methods we can use to output data to the user’s screen?
+>We can use **print, puts**
+>### What is similar between these two output methods?
+>The similarity between those two methods is the fact that it return nil
+>### What is different between these two output methods?
+>puts append the result in a new line which print does not and show the result and the return inline
+>### What is the method you can use to get input from the user?
+>You can get the input from the user by using get and if you want to trim separators you can add gets.chomp to remove the new line at the end
+>### What is at least one difference between the output and input methods?
+>The difference between the output method print, puts and gets which is a input methods is the fact that gets return the result of the input compared to puts and print which both return nil
