@@ -2,7 +2,6 @@
 Ruby Basic Data Types
 </h1>
 
----
 
 > ## What are the basic arithmetic operators you can use on numbers?
 >You can use those different arithmetic operators : **+ - / * %**
@@ -44,3 +43,42 @@ Ruby Basic Data Types
 >Nil represent the lack of value or empty or null it can be used to check if something is empty example : <br> number = 1 **number.empty?** should return false because number is not empty
 
 ---
+<h1 align = "center">
+Ruby Variables
+</h1>
+
+
+>## What is a variable?
+>A variable is a name for a type of storage you can store any type of data inside the variable. <br> A variable can be named anything and is not representative of the content inside of the variable
+>## How do you assign a value or an expression to a variable
+>**name = "John"** #String<br>
+>**number = 1** #Integer <br>
+>**CanProgram = false** //booleans
+>## What does the += assignment operator do?
+>The assignment perform an operation on the original value and reassign this value in this case it add the value so example : 
+>>**number = 5 <br> 
+>>number = number + 5 <br>Same as: number += 5**
+>## What does the -= assignment operator do?
+>Same as above but it subtract instead of add example: 
+>>**number = 5** <br> 
+>>**number -= 5 will result in 0 because we subtract 5 - 5**
+>## What does the *= assignment operator do?
+>Same as above but multiply instead of subtract
+>## What does the /= assignment operator do?
+>Same as above but divide instead of multiply
+>## What are the variable naming conventions?
+>You should always give your variable a meaningful name and not **a** for a string per example:
+>
+>### Bad naming conventions 
+>>**a = 1<br>
+>b = "John"<br>
+>c = true<br>**
+>
+>It mean nothing ! You will be lost after years or month after coming back you won't be able to tell what are those variable and you will need to think about it now if you named your variable like you should
+>### Good naming convention:
+>>**number_integer = 1<br>
+>>number_float = 1.30<br>
+>>last_name = "Kuuran"<br>
+>>can_swim = true<br>**
+>
+>**Also you should always name your variable with snake_case if the variable is multiple word that is the ruby way !**
