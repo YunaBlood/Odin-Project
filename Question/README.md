@@ -87,13 +87,49 @@ Ruby Variables
 Ruby Input and Output
 </h1>
 
->### What are the two methods we can use to output data to the user’s screen?
+>## What are the two methods we can use to output data to the user’s screen?
 >We can use **print, puts**
->### What is similar between these two output methods?
+>## What is similar between these two output methods?
 >The similarity between those two methods is the fact that it return nil
->### What is different between these two output methods?
+>## What is different between these two output methods?
 >puts append the result in a new line which print does not and show the result and the return inline
->### What is the method you can use to get input from the user?
+>## What is the method you can use to get input from the user?
 >You can get the input from the user by using get and if you want to trim separators you can add gets.chomp to remove the new line at the end
->### What is at least one difference between the output and input methods?
+>## What is at least one difference between the output and input methods?
 >The difference between the output method print, puts and gets which is a input methods is the fact that gets return the result of the input compared to puts and print which both return nil
+---
+<h1 align = "center">
+Ruby Conditional Logic
+</h1>
+
+>## What is a Boolean
+>A boolean is a type of value that return true or false
+>## What are "truthy" values?
+>A truthy value in ruby is everything except nil and false
+>## Are the following considered true or false: nil, 0, "0", "", 1, [], {} and -1?
+>> ### All value are true except nil and false
+>>**nil = false<br>
+0 = true<br>
+"0" = true<br>
+"" = true<br>
+1 = true<br>
+[] = true<br>
+{} = true<br>
+-1 = true**<br>
+>## When do you use elsif ?
+>We use elsif when you need to check multiple conditional that are true
+>## When do you use unless ?
+>You use unless when you want to do the inverse of a if so when you want to execute the code in function evaluate to false
+>## What do || and && and ! do ?
+>The ||(OR) &&(AND) (!) Both || && can be used to add more than one condition even if they evaluate the code differently && need to have both expression to be true or it will return false and || need only one of the two to be true
+>
+>For the ! it will return the opposite example : <br>**!false will return true and !!false will false again because it became true than became false again**
+>## What is short circuit evaluation ?
+>Because of how || operator work it will check only the first expression that evaluates to true if that expression is the first to be checked then it will not check the second one and will execute the code
+>## What is returned by puts("woah") || true ?
+>It puts the value "woah" and return true
+>## What is the ternary operator ?
+>The ternary operator is a way to write if...else statement if the condition is only two example :
+>>**conditional statement ? execute if true : execute if false**
+>## When should you use a case statement ?
+>You should use a case statement when your if..else become too complicated and your code get messy at this point consider using case
