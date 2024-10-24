@@ -2,7 +2,6 @@
 Ruby Basic Data Types
 </h1>
 
-
 > ## What are the basic arithmetic operators you can use on numbers?
 >
 >You can use those different arithmetic operators : **`+ - / * %`**
@@ -14,12 +13,12 @@ Ruby Basic Data Types
 >>
 >## What method would you use to convert a float to an integer?
 >>
->>`number = 3.50` <br> **`number.to_i with snake_case #=> 3`**
+>>**`number = 3.50` <br> `number.to_i with snake_case #=> 3`**
 >>
 >## What method would you use to convert an integer to a float?
 >>
->>`number = 3`<br>
->>**`number.to_f with snake_case #=> 3.00`**
+>>**`number = 3`<br>
+>>`number.to_f with snake_case #=> 3.00`**
 >>
 >## What is a string?
 >
@@ -32,8 +31,8 @@ Ruby Basic Data Types
 >## What is string interpolation?
 >
 >String interpolation is passing a variable inside a chain of character example:
->>`a = "Hello"` <br>
->>**`"#{a} User !"` <br>
+>>**`a = "Hello"` <br>
+>>`"#{a} User !"` <br>
 >>`Will have the result Hello User !`**
 >>
 >## How do you concatenate strings?
@@ -99,16 +98,15 @@ Ruby Basic Data Types
 Ruby Variables
 </h1>
 
-
 >## What is a variable?
 >
 >A variable is a name for a type of storage you can store any type of data inside the variable. <br> A variable can be named anything and is not representative of the content inside of the variable
 >
 >## How do you assign a value or an expression to a variable
 >
->**`name = "John"`** `#String`<br>
->**`number = 1`**` #Integer `<br>
->**`CanProgram = false`** `#Booleans`
+>**`name = "John"` `#String`<br>
+>`number = 1`` #Integer`<br>
+>`CanProgram = false`** `#Booleans`
 >
 >## What does the += assignment operator do?
 >
@@ -119,8 +117,8 @@ Ruby Variables
 >## What does the -= assignment operator do?
 >
 >Same as above but it subtract instead of add example:
->>**`number = 5`** <br>
->>**`number -= 5 will result in 0 because we subtract 5 - 5`**
+>>**`number = 5` <br>
+>>`number -= 5 will result in 0 because we subtract 5 - 5`**
 >>
 >## What does the *= assignment operator do?
 >
@@ -142,7 +140,7 @@ Ruby Variables
 >
 >It mean nothing ! You will be lost after years or month after coming back you won't be able to tell what are those variable and you will need to think about it now if you named your variable like you should
 >
->### Good naming convention:
+>### Good naming convention
 >>
 >>**`number_integer = 1`<br>
 >>`number_float = 1.30`<br>
@@ -198,8 +196,8 @@ Ruby Conditional Logic
 `1 = true`<br>
 `[] = true`<br>
 `{} = true`<br>
-`-1 = true**`**
-
+`-1 = true`**
+>
 >## When do you use elsif ?
 >
 >We use elsif when you need to check multiple conditional that are true
@@ -231,3 +229,75 @@ Ruby Conditional Logic
 >
 >You should use a case statement when your if..else become too complicated and your code get messy at this point consider using case
 ---
+<h1 align = "center">
+Ruby Loops
+</h1>
+
+>## What is a loop and why it is useful?
+>
+>A loop is when you don't want to repeat yourself many times to do something <br>
+>They are useful to do many action at once !
+>
+>## What is a loop loop, and how would you use it?
+>
+>A loop loop so a infinite loop
+>You can loop infinite if you don't break and give the break condition !
+>Example :
+>
+>>### **This loop will ask the user if he need help and if he say yes it will stop asking otherwise it will ask again and again** <br>
+>>
+>>**`help = ""`<br>
+>>`loop do`<br>
+>>&nbsp;&nbsp;`puts "You need help ?`<br>
+>>&nbsp;&nbsp;`help = gets.chomp`<br>
+>>&nbsp;&nbsp;`break if help == "yes"`<br>
+>>`end`**<br>
+>
+>## What is a while loop, and how would you use it?
+>
+>A while loop is a loop that will be executed if the condition stay true and will stop when it become false
+>
+>>###  **Ask the user if he died if the user input something else than yes he will get asked again until he input yes then the condition will become true** <br>
+>>
+>>**`while gets.chomp != "yes" do` <br>
+>>&nbsp;&nbsp;`puts "You died no ?"`<br>
+>>`end`**
+>>
+>## What is a for loop, and how would you use it?
+>
+>A for loop is a loop for iterating through a collection of item so per example a array or a range
+>
+>>### **Countdown will countdown a number given by the user until 0 than the loop will stop and show the message "Done"**
+>>
+>>**`ask_number = gets.chomp.to_i`<br>
+`for i in 1..ask_number do`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`puts ask_number - i`<br>
+`end`<br>
+`puts "Done"`**
+>
+>## What is a #times loop, and how would you use it?
+>
+>A times loop is a loop that can be used to repeat something a number of times
+>
+>>### **This loop will show the user the number in function of how many times you want the loop to run and return the last value in this case 5**
+>>
+>>**`5.times do |number|` <br>
+>>`puts "The number is #{number}"` <br>
+>>`end`**
+>
+>## What is an until loop, and how would you use it?
+>
+>Until loop is the inverse of a while loop so the while loop run when the condition is true and become false <br>
+>The loop until run when the condition is false and will stop when it became true
+>
+>>### **Refactoring my while loop with the same logic as my while loop** <br>
+>>
+>>**`until gets.chomp == "yes" do` <br>
+>>&nbsp;&nbsp;&nbsp;&nbsp;`puts "You died no ?"`<br>
+>>`end`**
+>>
+>## What are the #upto and #downto loops, and how would you use them?
+>
+>The upto and downto loops are useful to loop through a series of numbers
+>>**`5.upto(10) {|num| puts "number is #{num}" }` <br>
+>>`10.downto(5) {|num| puts "number is #{num} }`**
