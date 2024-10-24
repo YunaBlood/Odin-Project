@@ -301,3 +301,50 @@ Ruby Loops
 >The upto and downto loops are useful to loop through a series of numbers
 >>**`5.upto(10) {|num| puts "number is #{num}" }` <br>
 >>`10.downto(5) {|num| puts "number is #{num} }`**
+---
+<h1 align = "center">
+Ruby Arrays
+</h1>
+
+>## What is an array and why is it useful?
+>
+>An array is a collection of data it can contain all type of object like string, integer, float and even other array which create a nested array and your array become a multidimensional array.<br>
+>It is useful to not create hundred of variable which will inevitably happen when the scope of the project will get bigger and bigger.<br>
+>It's also more clean and readable to have variable inside the array that you can call
+>It's also more easy to manipulate a collection of data than a individual type of data
+>
+>## What are two ways to create a new empty array?
+>>
+>>**`new_array = [1,2,3]` <br>
+>>`Array.new(0)`<br>
+>>`Array.new(initial size, default value)`**
+>>
+>## What are some ways of accessing the elements in an array?
+>
+>To access elements in a an array you have many ways an method to do so
+>>**`array[0]` #=>Access first element of the array <br>
+>>`array[-1]` #=>Access last of the array<br>
+>>`array.last(value)` #=> Access last element<br>
+>>`array.first(value)` #=>Access first element<br>
+>>`array[0][1]` #=> Access first array, second element of that array. Way to access element in a nested array <br>
+>>`array.take(3)` #=> Access the first 3 elements and return a new array <br>
+>>`array.at(0)` #=> Access the index specified**
+>>
+>## What are 3 ways to add data to an array?
+>
+>3 ways to add data to an array are :
+>>
+>>1. **`array.push(element)`<br>**
+>>2. **`array.unshift(element)`<br>**
+>>3. **`array << element`**
+>>
+>## How can you remove elements from an array?
+>
+>>1. **`array.pop(element)`<br>**
+>>2. **`array.shift(element)`<br>**
+>>3. **`array.delete_at(index)`<br>**
+>>4. **`array.delete(element)`<br>**
+>>5. **`#Remove nil array.compact`<br>**
+>>6. **`Remove duplicate array.uniq`<br>**
+>
+---
