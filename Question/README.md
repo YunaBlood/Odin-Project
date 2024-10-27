@@ -89,8 +89,10 @@ Ruby Basic Data Types
 >## What does nil represent?
 >
 >Nil represent the lack of value or empty or null it can be used to check if something is empty example : <br>
->>**`number = 1 number.empty?`** <br>
->
+>>**`number = 1`** <br>
+>Convert number into a string to check if empty
+>>**`number.to_s`**
+>>**`number.empty?`**
 > should return false because number is not empty
 
 ---
