@@ -348,3 +348,68 @@ Ruby Arrays
 >>6. **`Remove duplicate array.uniq`<br>**
 >
 ---
+<h1 align = "center">
+Ruby Hashes
+</h1>
+
+>## What are the differences between hashes and arrays?
+>>
+>>### The differences between hashes and arrays is :
+>>
+>>Arrays are dependant on order which int's true for array also hashes use key-values pair to show a value.<br><br>
+>>It means if you know the name of your key you can get the value compared to a an array who you need to work with the index order and must be in order.
+>>
+>## What are keys and values in a hash?
+>>
+>>**Key and values in hash are the way to name a data type with a Key and the value of this key you will call this key to get the value associated with it**
+>>
+>## How can you create a new hash?
+>>
+>>**`new_hash = {}` Which will create an empty hash or
+>>`my_hash = Hash.new` Same as above**
+>>
+>## How can you populate a hash with data?
+>>
+>>Let's say we create a simple hash for cats:<br>
+**`cat = {name: "Whiskers", weight: "5kg"}` <br>**
+>>To add a key-value pair:<br> **`cat[:lifespan] = "13-20 (Domesticated)"`**
+>>
+>## How can you change existing values within a hash?
+>>
+>>Retaking our example with the hash of cat:<br>
+>>**`cat = {name: "Whiskers", weight: "5kg", lifespan: "13-20 (Domesticated)"}`** <br>
+>>Changing existing values:<br>
+>>**`cat[:name] = "Cleo"`** <br>
+>>Will change existing values and return the new one
+>>
+>## How can you delete existing data from a hash?
+>>
+>>**`cat = {name: "Cleo", weight: "5kg", lifespan: "13-20 (Domesticated)"}`** <br>
+>>Remove a existing data key-values pair:
+>>**`cat.delete(:lifespan)`**<br>
+>>Will remove lifespan key and values so it will return:<br>
+>>**`{:name=>"Cleo", :weight=>"5kg"}`**
+>>
+>## How can you merge two hashes together?
+>>
+>>Let's say we have cat hash and weight hash<br>
+>>**`cat = {name: "Cinder"}`** <br>
+>>**`weight = {weight: "4kg"}`** <br>
+>>Merge two hash together<br>
+>>**`cat.merge(weight)`**
+>>
+>## Why is it preferred to use symbols as hash keys?
+>>
+>>It's preferred to use symbol for hash keys because it's more clean to read and write.<br>
+>>You can remove the colon and use it to assign the value instead of using the hash rocket like you should for other type of keys example:
+>>
+>> ### Rocket Ways
+>>
+>>**For this one need to use string to create keys**<br>
+>>**`cat = {"name" => "Whiskers", "weight" => "5kg", "lifespan" => "13-20"}`**
+>>
+>> ### Symbol Ways
+>>
+>>**`cat = {name: "Whiskers", weight: "5kg", lifespan: "13-20"}`**<br>
+>>Also symbol can be used for all type of data
+---
