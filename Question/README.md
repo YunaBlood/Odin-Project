@@ -356,7 +356,7 @@ Ruby Hashes
 
 >## What are the differences between hashes and arrays?
 >>
->>### The differences between hashes and arrays is :
+>>### The differences between hashes and arrays is
 >>
 >>Arrays are dependant on order which int's true for array also hashes use key-values pair to show a value.<br><br>
 >>It means if you know the name of your key you can get the value compared to a an array who you need to work with the index order and must be in order.
@@ -414,4 +414,137 @@ Ruby Hashes
 >>
 >>**`cat = {name: "Whiskers", weight: "5kg", lifespan: "13-20"}`**<br>
 >>Also symbol can be used for all type of data
+---
+<h1 align = "center">
+Ruby Methods
+</h1>
+
+>## How would you create your own method?
+>>
+>>### To create a method here some example to add two number
+>>
+>>**`def add(a, b)`<br>
+>>`a + b`<br>
+>>`end`**
+>>
+>## How would you call your new method?
+>>
+>>### Call a method
+>>
+>>**`def add(a, b)`<br>
+>>`a + b`<br>
+>>`end`**
+>>
+>>**`add(5, 2)`** result = 7
+>>
+>## How do you pass variables to your method?
+>>
+>>### Make a methods for greeting someone and pass it the local variable
+>>
+>>### Example :<br>
+>>
+>>**`def greet(name)`** <br>
+>>**`"hello, " + name + " how are you ?`** <br>
+>>**`end`** <br>
+>>
+>>**`greet "John"`** <br> #Parentheses not necessary
+>>
+>## How do you define default parameters for your method?
+>>
+>>**You give your local variable declared in the scope of your method a default value !**
+>>
+>>### Example
+>>
+>>**`def greet(name = "Bob")`** <br>
+>>**`"hello, " + name + " how are you ?`** <br>
+>>**`end`** <br>
+>>
+>>**`greet`**
+>>
+>## What is the difference between an explicit return and an implicit return?
+>>
+>>### The difference between an explicit return and an implicit return is the fact that in ruby the last line in a method get returned without the keyword return so you shouldn't use explicit return unless you want to stop your program for a certain reason like a error
+>>
+>>### Example
+>>
+>>#### Explicit return: <br>
+>>
+>>**1. Need the keyword return to be used** <br>
+>>**2. Will stop the methods after being used** <br>
+>>**3. Can be useful to stop the program if the data is not correct to your expectation** <br>
+>>
+>>#### Implicit return: <br>
+>>
+>>**1. Implicit return is used at the last line of the method without needing to used the keyword return like in javascript per example !** <br>
+>>**2. Will always return the last line so if this line is a puts will return nil for the value so if that not the desired behavior need to call the variable that you want the value of** <br>
+>>
+>## What is the difference between puts and return?
+>>
+>>### Difference
+>>
+>>#### puts
+>>
+>>**1. print on the screen** <br>
+>>**2. return nil always** <br>
+>>**3. print the content always by making a new line between each new content**
+>>
+>>#### return
+>>
+>>**1. return the value** <br>
+>>**2. does not print the output on the screen**
+>>
+>## How do you chain multiple methods together?
+>>
+>>### By using the object.methods you can call many methods together let's say you want to know the length and transform this length into a string
+>>
+>>**`"teststring".length.to_s`**
+>>
+>## Give an example of a valid method name and an invalid method name
+>>
+>>### Invalid method name
+>>
+>>**`def 1some_methods_name(optional parameters)`** #Not good because a number at the beginning<br>
+>>**`def end(optional parameter)`** end is a keyword protected in ruby cannot be used for methods<br>
+>>**`def add?or_not(optional parameter)`** cannot use a ? in between the word only at the end and for predicate methods<br>
+>>
+>>### Valid method name
+>>
+>>**`def add(a, b)` <br>
+>>`def is_odd?(number)` <br>
+>>`def subtract(a, b)`** <br>
+>>
+>## What is snake case?
+>>
+>>### A snake_case is the way to write variable names, methods name in ruby you should always use it if you write multiple word variable or names
+>>
+>>### Example
+>>
+>>**`a_big_number = 5516611`** <br>
+>>
+>>**the syntax for snake_case is the word + underscore and and the second word**
+>>
+>## What are some of Ruby’s reserved words?
+>>
+>>1. while
+>>2. def
+>>3. until
+>>4. unless
+>>5. end <br>
+>>
+>>**And many other they are 40 reserved words in total**
+>>
+>## What do you call a method that returns true or false? What is their naming convention?
+>>
+>>### A method that should return true or false is called a predicate method
+>>
+>>### Their naming convention is the fact that at the end of a method name it should have a question mark (?) to show that it's a question and the answer should be true or false
+>>
+>## What do bang methods do? What is their naming convention?
+>>
+>>### Bang method change the original object so it change self
+>>
+>>### A bang method should always have a ! at the end like per example the normal:<br>
+>>
+>>**`method normal object.upcase and the bang method object.upcase!`**
+>>
 ---
