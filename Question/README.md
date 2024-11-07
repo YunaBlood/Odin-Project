@@ -548,3 +548,36 @@ Ruby Methods
 >>**`method normal object.upcase and the bang method object.upcase!`**
 >>
 ---
+<h1 align = "center">
+Ruby Debugging
+</h1>
+
+>## What is a stack trace?
+>>
+>>### A stack trace is multiple line that show error, show the call stack of methods, other type of information like the line that the error is
+>>
+>## What is generally the most useful line in a stack trace?
+>>
+>> ### The first line show the error and is the is the most important line to check first
+>>
+>## What are the two things you can learn from the first line of a stack trace?
+>>
+>> ### The error and explanation of the error and the line where the error was found
+>>
+>## How do puts and Pry help you in the debugging process?
+>>
+>>### puts and pry help to check the value of the variable and understand how the program work and if there is a problem of logic and not a stack trace
+>>
+>## What should you use instead of puts for nil values?
+>>
+>>### Should use p because puts show a blank in the irb or when you try to debug with puts will puts a blank line instead of the value needed to debug which can be confusing
+>>
+>## Where should you start with debugging if you encounter a runtime error?
+>>
+>>### Should look at the stack trace to see the line where the error occurred and the explanation of the error
+>>
+>## Where should you start with debugging if your program runs but does not work the way you expect?
+>>
+>>### You can debug with puts, p if your program is pretty simple otherwise use pry-byebug to test more in depth and see what is wrong with your logic to fix the logic of the program
+
+---
