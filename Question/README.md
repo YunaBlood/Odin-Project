@@ -519,8 +519,9 @@ Ruby Methods
 >>
 >>### Example
 >>
->>**`a_big_number = 5516611`** <br>
->>
+>>``` ruby
+>>`a_big_number = 5516611`
+>
 >>**the syntax for snake_case is the word + underscore and and the second word**
 >>
 >## What are some of Ruby’s reserved words?
@@ -581,3 +582,59 @@ Ruby Debugging
 >>### You can debug with puts, p if your program is pretty simple otherwise use pry-byebug to test more in depth and see what is wrong with your logic to fix the logic of the program
 
 ---
+<h1 align = "center">
+Ruby Basic Enumerable Methods
+</h1>
+
+>## What does the #each method do? What does it return?
+>>
+>>### The each method iterate through a collection of object and return the original object
+>>
+>## What does the #each_with_index method do?
+>>
+>>### Same as the each method instead it take two arguments instead of one the index and the object
+>>
+>## What does the #map method do?
+>>
+>>### Iterate through a collection of object and transform those object and return a new array with the transformed item
+>>
+>>
+>>### Example
+>>
+>>``` ruby
+>>irb(main):001> arr = [1,2,3]
+>>=> [1, 2, 3]
+>>irb(main):002> arr.map {|num| num*2}
+>>=> [2, 4, 6]
+>>
+>## What does the #select method do?
+>>
+>>### Iterate through a collection of object and select the object you want and return it in a new array
+>>
+>>### Example
+>>
+>>``` ruby
+>>irb(main):001> arr = [1,2,3]
+>>=> [1, 2, 3]
+>>irb(main):002> arr.select {|num| num > 2}
+>>=> [3]
+>>
+>## What does the #reduce method do?
+>>
+>>### Iterate trough a collection of object and reduce those elements to return only one object
+>>
+>>### Example
+>>
+>>``` ruby
+>>irb(main):006> arr = [1,2,3]
+>>=> [1, 2, 3]
+>>irb(main):007> arr.reduce {|a, v| a + v}
+>>=> 6
+>>
+>## When should you use do...end around a code block versus {...}?
+>>
+>>### Should use a do...end when the logic need multi line block compared to {...} which is a one line block
+>>
+>## Why should you avoid using the bang methods of enumerables?
+>>
+>>### You should avoid bang method because they mutate the caller and modify the original object which we don't want and can have behavior that can make the code more difficult to debug ! And understand
