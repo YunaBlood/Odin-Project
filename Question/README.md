@@ -521,7 +521,8 @@ Ruby Methods
 >>
 >>``` ruby
 >>`a_big_number = 5516611`
->
+>>```
+>>
 >>**the syntax for snake_case is the word + underscore and and the second word**
 >>
 >## What are some of Ruby’s reserved words?
@@ -638,3 +639,29 @@ Ruby Basic Enumerable Methods
 >## Why should you avoid using the bang methods of enumerables?
 >>
 >>### You should avoid bang method because they mutate the caller and modify the original object which we don't want and can have behavior that can make the code more difficult to debug ! And understand
+
+<h1 align = "center">
+Ruby Predicate Enumerable Methods
+</h1>
+
+>## Why is there a question mark after some method names?
+>
+>>### Because they are predicate method which are question and need to have the answer of true or false
+>
+>## What does the #include? method do?
+>
+>>### The include method check if the value exist inside the hash or array
+>
+>## What does the #any? method do?
+>
+>>### Check if any of the element matches the condition of the block and will return true if that the case otherwise false
+>
+>## What does the #all? method do?
+>
+>>### Check if all of the elements matches the condition of the block if that the case return true otherwise if only certain element are true return false
+>
+>## What does the #none? method do?
+>
+>>### none? is the inverse of all? it check if there are no elements that matches the condition and if that the case it return true else false
+
+---
