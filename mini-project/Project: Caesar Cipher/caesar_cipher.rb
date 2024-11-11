@@ -1,12 +1,9 @@
-require "pry-byebug"
-#  > caesar_cipher("What a string!", 5)
 def caesar_cipher(word, shift)
   #Initialize array
   caesar_cipher_array = []
   #Split word into an array of string
   #Iterate word into each char
   word.split("").map do |char|
-    # binding.pry
     #Check if char is between a and z
     #if yes shift and wrap around a-z and push inside the array
     if char.between?("a","z")
